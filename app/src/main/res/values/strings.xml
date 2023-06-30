@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">houseAddress</string>
-</resources>
+    <string name="save_desc">Will You Like To Save This Trip?</string>
+    <string name="save_title">Trip</string>
+    <string name="location_on_map">Find Location On Map</string></resources>
