@@ -101,6 +101,15 @@
               android:gravity="center_horizontal"
               android:text="Description"
               android:textSize="20sp" />
+            <TextView
+                android:id="@+id/america"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="america"
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
 

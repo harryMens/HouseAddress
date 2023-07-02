@@ -36,6 +36,7 @@ public class TripInfoActivity extends AppCompatActivity {
         TextView houseNumber = findViewById(R.id.house_number);
         TextView road = findViewById(R.id.road);
         TextView postCode = findViewById(R.id.post_code);
+        TextView america = findViewById(R.id.america);
 
         LocationInfo  info= getIntent().getParcelableExtra(TRIP_DATA);
         Address address = getIntent().getParcelableExtra(HOUSE_DATA);
@@ -53,6 +54,13 @@ public class TripInfoActivity extends AppCompatActivity {
 
         if (i != 0){
             getSupportActionBar().setTitle("HOUSE "+i);
+        }
+
+        if (info.getLatitude()>= -56 && info.getLatitude() <= 84){
+            america.setText("House Description: It is probably a wood house");
+        }
+        else{
+            america.setText("House Description: Since this is outside North America, this house may be made of stone or brick.");
         }
         latitude.setText("Latitude: "+info.getLatitude());
         longitude.setText("Longitude: "+info.getLongitude());
